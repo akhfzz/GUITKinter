@@ -7,7 +7,7 @@ class Kasir(object):
 		self.harga = harga
 		self.Qty = Qty
 		
-class Kasir:
+class KasirMachine:
 	def __init__(self, master):
 		self.master = master
 		master.title('Kasir Toko Kelontong')
@@ -72,5 +72,5 @@ class Kasir:
 		Qty = Label(self.master, text='Qty', borderwidth=1, width=20, relief='raised', bg='black', fg='white').grid(row=10, column=7,pady=20,columnspan=4)
 		Total = Label(self.master, text='Total', borderwidth=1, width=20, relief='raised', bg='black', fg='white').grid(row=10, column=11,pady=20,columnspan=4)
 root = Tk()
-obj = Kasir(root)
+obj = KasirMachine(root)
 root.mainloop()
